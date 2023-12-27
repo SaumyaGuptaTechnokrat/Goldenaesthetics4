@@ -1,0 +1,519 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Transition
+	2.0 - Alert Boxes
+	3.0 - DT Responsive*/
+
+/*--------------------------------------------------------------
+	1.0 - Titled Boxes
+	--------------------------------------------------------------*/
+
+.dt-sc-titled-box {
+    margin-bottom: 20px;
+    width: 100%;
+    clear: both;
+}
+
+.dt-sc-titled-box h6.dt-sc-titled-box-title {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 15px 11px;
+    text-shadow: none;
+    margin: 0;
+}
+
+.dt-sc-titled-box h6.dt-sc-titled-box-title span {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.dt-sc-titled-box-content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.dt-sc-titled-box h6.dt-sc-titled-box-title {
+    color: #ffffff;
+}
+
+.dt-sc-titled-box.blue h6.dt-sc-titled-box-title {
+    background-color: #008bd3;
+}
+
+.dt-sc-titled-box.brown h6.dt-sc-titled-box-title {
+    background-color: #795548;
+}
+
+.dt-sc-titled-box.cadetblue h6.dt-sc-titled-box-title {
+    background-color: #3c939d;
+}
+
+.dt-sc-titled-box.chillipepper h6.dt-sc-titled-box-title {
+    background-color: #c10841;
+}
+
+.dt-sc-titled-box.cyan h6.dt-sc-titled-box-title {
+    background-color: #00bcd4;
+}
+
+.dt-sc-titled-box.darkgolden h6.dt-sc-titled-box-title {
+    background-color: #b48b3c;
+}
+
+.dt-sc-titled-box.deeporange h6.dt-sc-titled-box-title {
+    background-color: #ff5722;
+}
+
+.dt-sc-titled-box.deeppurple h6.dt-sc-titled-box-title {
+    background-color: #673ab7;
+}
+
+.dt-sc-titled-box.green h6.dt-sc-titled-box-title {
+    background-color: #60ae0d;
+}
+
+.dt-sc-titled-box.lime h6.dt-sc-titled-box-title {
+    background-color: #cddc39;
+}
+
+.dt-sc-titled-box.magenta h6.dt-sc-titled-box-title {
+    background-color: #cb506d;
+}
+
+.dt-sc-titled-box.orange h6.dt-sc-titled-box-title {
+    background-color: #ff9800;
+}
+
+.dt-sc-titled-box.pink h6.dt-sc-titled-box-title {
+    background-color: #fd6ca3;
+}
+
+.dt-sc-titled-box.purple h6.dt-sc-titled-box-title {
+    background-color: #9c27b0;
+}
+
+.dt-sc-titled-box.red h6.dt-sc-titled-box-title {
+    background-color: #da0000;
+}
+
+.dt-sc-titled-box.skyblue h6.dt-sc-titled-box-title {
+    background-color: #0eb2e7;
+}
+
+.dt-sc-titled-box.teal h6.dt-sc-titled-box-title {
+    background-color: #009688;
+}
+
+.dt-sc-titled-box.turquoise h6.dt-sc-titled-box-title {
+    background-color: #32ccbd;
+}
+
+.dt-sc-titled-box.wisteria h6.dt-sc-titled-box-title {
+    background-color: #9b59b6;
+}
+
+.dt-sc-titled-box.yellow h6.dt-sc-titled-box-title {
+    background-color: #ffe401;
+    color: #000000;
+}
+
+/*--------------------------------------------------------------
+	2.0 - Alert Boxes
+	--------------------------------------------------------------*/
+
+.dt-sc-error-box,
+.dt-sc-warning-box,
+.dt-sc-success-box,
+.dt-sc-info-box {
+    margin-bottom: 20px;
+    padding: 15px 15px 15px 45px;
+    clear: both;
+}
+
+.dt-sc-error-box a,
+.dt-sc-warning-box a,
+.dt-sc-success-box a,
+.dt-sc-info-box a {
+    text-decoration: underline;
+}
+
+.dt-sc-error-box {
+    background-color: #ffcccc;
+    border: 1px solid #ff9999;
+    color: #d01313;
+    position: relative;
+}
+
+.dt-sc-error-box:before,
+.dt-sc-warning-box:before,
+.dt-sc-success-box:before,
+.dt-sc-info-box:before {
+    top: 16px;
+    left: 18px;
+    font-family: "fontAwesome";
+    font-style: normal;
+    font-weight: 900;
+    text-decoration: inherit;
+    font-size: 20px;
+    position: absolute;
+}
+
+.dt-sc-error-box:before {
+    content: "\f057";
+    color: #C54228;
+}
+
+.dt-sc-warning-box {
+    background-color: #fdebae;
+    border: 1px solid #e6c555;
+    color: #c79d13;
+    position: relative;
+}
+
+.dt-sc-warning-box:before {
+    content: "\f06a";
+    color: #e2b828;
+}
+
+.dt-sc-success-box {
+    background-color: #eafac0;
+    border: 1px solid #b1cf67;
+    color: #7ba411;
+    position: relative;
+}
+
+.dt-sc-success-box:before {
+    content: "\f058";
+    color: #75b632;
+}
+
+.dt-sc-info-box {
+    background-color: #bfe4f9;
+    border: 1px solid #68a2cf;
+    color: #2081b9;
+    position: relative;
+}
+
+.dt-sc-info-box:before {
+    content: "\f05a";
+    color: #008bc1;
+}
+
+.dt-sc-error-box a {
+    color: #d01313;
+}
+
+.dt-sc-warning-box a {
+    color: #c79d13;
+}
+
+.dt-sc-success-box a {
+    color: #7ba411;
+}
+
+.dt-sc-info-box a {
+    color: #2081b9;
+}
+
+/*----*****---- << Colored Box >> ----*****----*/
+
+.dt-sc-colored-box {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 15px 5% 20px;
+    width: 100%;
+    color: #ffffff;
+}
+
+.dt-sc-colored-box a,
+.dt-sc-colored-box h5 {
+    color: #ffffff;
+}
+
+.dt-sc-colored-box h5 {
+    text-transform: uppercase;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.dt-sc-colored-box h5 span {
+    font-size: 30px;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+}
+
+.dt-sc-colored-box .dt-sc-button,
+.dt-sc-colored-box.type1 .dt-sc-button {
+    border: 1px solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 11px 20px;
+}
+
+.dt-sc-colored-box .dt-sc-button:after,
+.dt-sc-colored-box.type1 .dt-sc-button:after {
+    background: #ffffff;
+}
+
+.dt-sc-colored-box .dt-sc-button:hover,
+.dt-sc-colored-box.type1 .dt-sc-button:hover {
+    color: #333334;
+}
+
+.dt-sc-colored-box h5 img {
+    margin-right: 10px;
+    max-height: 25px;
+    position: relative;
+    top: 4px;
+}
+
+/*----*****---- << Numbered List >> ----*****----*/
+
+.dt-sc-callout-box {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+.dt-sc-callout-box.type1 {
+    background: url(../../images/introtext-border-top.png) center top no-repeat;
+    padding: 40px 0px 0px;
+    text-align: center;
+}
+
+.dt-sc-callout-box.type1 h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.dt-sc-callout-box.type1 h4 span.highlight {
+    color: #ffffff;
+    padding: 7px 15px;
+    margin: 0px 5px;
+}
+
+.dt-sc-callout-box.type1 h5 {
+    text-transform: uppercase;
+    color: #a0a0a1;
+    background: url(../../images/intro-text-border-bottom.png) center bottom no-repeat;
+    padding-bottom: 37px;
+}
+
+.dt-sc-callout-box.type2,
+.dt-sc-callout-box.type3,
+.dt-sc-callout-box.type4 {
+    background: #ededed;
+    padding: 30px 2.5%;
+    width: 100%;
+}
+
+.dt-sc-callout-box.type2 h4,
+.dt-sc-callout-box.type3 h4,
+.dt-sc-callout-box.type4 h4 {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.dt-sc-callout-box.type2 h5,
+.dt-sc-callout-box.type3 h5,
+.dt-sc-callout-box.type4 h5 {
+    color: #a0a0a1;
+    margin-bottom: 0px;
+}
+
+.dt-sc-callout-box.type3 h4,
+.dt-sc-callout-box.type3 h5 {
+    color: #ffffff;
+}
+
+.dt-sc-callout-box.type4 {
+    border-left: 5px solid;
+    width: 100%;
+}
+
+.dt-sc-callout-box.type2 .dt-sc-button,
+.dt-sc-callout-box.type3 .dt-sc-button,
+.dt-sc-callout-box.type4 .dt-sc-button {
+    float: right;
+}
+
+.dt-sc-callout-box .dt-sc-button {
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.dt-sc-callout-box.type3 .dt-sc-button {
+    border-color: #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.dt-sc-callout-box.type3 .dt-sc-button:after {
+    background: #ffffff;
+}
+
+.dt-sc-callout-box.type3 .dt-sc-button:hover {
+    color: #333334;
+}
+
+.dt-sc-callout-box.type5 {
+    padding: 30px 2.5%;
+    width: 96.8%;
+    border-left: 5px solid;
+    position: relative;
+}
+
+.dt-sc-callout-box.type5 h4 {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.dt-sc-callout-box.type5 h5 {
+    margin-bottom: 0px;
+}
+
+.dt-sc-callout-box.type5:after {
+    content: "";
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 35px solid;
+    right: -35px;
+    width: 0;
+    height: 0;
+    margin: auto;
+    top: 0px;
+    bottom: 0;
+    position: absolute;
+}
+
+.dt-sc-callout-box.type2 .dt-sc-button,
+.dt-sc-callout-box.type3 .dt-sc-button,
+.dt-sc-callout-box.type4 .dt-sc-button,
+.dt-sc-callout-box.type5 .dt-sc-button {
+    right: -5px;
+    position: relative;
+    padding: 11px 20px;
+    font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+	3.0 - Responsive
+	--------------------------------------------------------------*/
+
+/* Note: Design for a width of 960px */
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .dt-sc-error-box:before,
+    .dt-sc-warning-box:before,
+    .dt-sc-success-box:before,
+    .dt-sc-info-box:before {
+        top: 16px;
+    }
+    .dt-sc-callout-box.type5 {
+        padding: 30px 1.5%;
+    }
+    .dt-sc-colored-box h5 {
+        font-size: 14px;
+    }
+}
+
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .dt-sc-error-box:before,
+    .dt-sc-warning-box:before,
+    .dt-sc-success-box:before,
+    .dt-sc-info-box:before {
+        top: 17px;
+    }
+    .dt-sc-callout-box.type5 h4 {
+        font-size: 16px;
+    }
+    .dt-sc-callout-box.type5 {
+        width: 94.8%;
+    }
+    .dt-sc-callout-box.type5:after {
+        border-top: 59px solid transparent;
+        border-bottom: 59px solid transparent;
+        right: -35px;
+    }
+    .dt-sc-callout-box.type5 .dt-sc-button {
+        padding: 11px 10px;
+        font-size: 11px;
+    }
+    .wpcf7-form.dt-sc-titled-box-content {
+        width: 100%;
+    }
+}
+
+/*----*****---- << Mobile (Landscape) >> ----*****----*/
+
+/* Common Styles for the devices below 767px width */
+
+@media only screen and (max-width: 767px) {
+    .dt-sc-error-box:before,
+    .dt-sc-warning-box:before,
+    .dt-sc-success-box:before,
+    .dt-sc-info-box:before {
+        top: 16px;
+    }
+    .dt-sc-callout-box.type5:after {
+        border-top: 120px solid transparent;
+        border-bottom: 120px solid transparent;
+        right: -35px;
+    }
+}
+
+/*----*****---- << Mobile >> ----*****----*/
+
+/* Common Styles for the devices below 479px width */
+
+@media only screen and (max-width: 479px) {
+    .dt-sc-error-box:before,
+    .dt-sc-warning-box:before,
+    .dt-sc-success-box:before,
+    .dt-sc-info-box:before {
+        top: 17px;
+    }
+    .dt-sc-callout-box.type5 h4 {
+        font-size: 16px;
+    }
+    .dt-sc-callout-box.type5::after {
+        border-top: 130px solid transparent;
+        border-bottom: 130px solid transparent;
+        right: -35px;
+    }
+    .dt-sc-callout-box.type5 {
+        width: 92.8%;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 319px) {
+    /** Fancy Boxes **/
+    .dt-sc-titled-box h6.dt-sc-titled-box-title {
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 20px;
+        padding-left: 35px;
+        position: relative;
+    }
+    .dt-sc-titled-box h6.dt-sc-titled-box-title span {
+        font-size: 14px;
+        position: absolute;
+        left: 10px;
+        top: 14px;
+    }
+}

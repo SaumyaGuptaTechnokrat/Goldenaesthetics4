@@ -1,0 +1,578 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Blockquotes
+	2.0 - Default Colors
+	3.0 - Responsive
+	4.0 - Skin Colors*/
+
+/*--------------------------------------------------------------
+	1.0 - Blockquotes
+	--------------------------------------------------------------*/
+
+blockquote.type1 q {
+    font-size: 18px;
+    line-height: 30px;
+    display: inline-block;
+    font-weight: 300;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 20px 0px;
+    margin-bottom: 10px;
+}
+
+.dt-sc-dark-bg blockquote.type1 q {
+    border-color: #ffffff;
+}
+
+blockquote.type3 {
+    padding: 15px 0 15px 25px;
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+blockquote.type3 q {
+    font-size: 16px;
+}
+
+blockquote.type4 {
+    background: #f5f5f5;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+blockquote.type4>cite {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+blockquote.type4 span {
+    float: left;
+    width: 100%;
+    color: #999999;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+
+blockquote.type4>q:before,
+blockquote.type4>q:after {
+    display: inline-block;
+    font-family: georgia;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+blockquote.type4>q:before {
+    top: 14px;
+}
+
+blockquote.type4>q:after {
+    bottom: -10px;
+}
+
+/* Variations */
+
+/* Blue */
+
+blockquote.type1.blue q,
+blockquote.type3.blue {
+    border-color: #008bd3;
+}
+
+blockquote.type2.blue cite::before {
+    background-color: #008bd3;
+}
+
+/* Brown */
+
+blockquote.type1.brown q,
+blockquote.type3.brown {
+    border-color: #795548;
+}
+
+blockquote.type2.brown cite::before {
+    background-color: #795548;
+}
+
+/* CadetBlue */
+
+blockquote.type1.cadetblue q,
+blockquote.type3.cadetblue {
+    border-color: #3c939d;
+}
+
+blockquote.type2.cadetblue cite::before {
+    background-color: #3c939d;
+}
+
+/* Chillipepper */
+
+blockquote.type1.chillipepper q,
+blockquote.type3.chillipepper {
+    border-color: #c10841;
+}
+
+blockquote.type2.chillipepper cite::before {
+    background-color: #c10841;
+}
+
+/* Cyan */
+
+blockquote.type1.cyan q,
+blockquote.type3.cyan {
+    border-color: #00bcd4;
+}
+
+blockquote.type2.cyan cite::before {
+    background-color: #00bcd4;
+}
+
+/* Darkgolden */
+
+blockquote.type1.darkgolden q,
+blockquote.type3.darkgolden {
+    border-color: #b48b3c;
+}
+
+blockquote.type2.darkgolden cite::before {
+    background-color: #b48b3c;
+}
+
+/* DeepOrange */
+
+blockquote.type1.deeporange q,
+blockquote.type3.deeporange {
+    border-color: #ff5722;
+}
+
+blockquote.type2.deeporange cite::before {
+    background-color: #ff5722;
+}
+
+/* DeepPurple */
+
+blockquote.type1.deeppurple q,
+blockquote.type3.deeppurple {
+    border-color: #673ab7;
+}
+
+blockquote.type2.deeppurple cite::before {
+    background-color: #673ab7;
+}
+
+/* Green */
+
+blockquote.type1.green q,
+blockquote.type3.green {
+    border-color: #60ae0d;
+}
+
+blockquote.type2.green cite::before {
+    background-color: #60ae0d;
+}
+
+/* Lime */
+
+blockquote.type1.lime q,
+blockquote.type3.lime {
+    border-color: #cddc39;
+}
+
+blockquote.type2.lime cite::before {
+    background-color: #cddc39;
+}
+
+/* Magenta */
+
+blockquote.type1.magenta q,
+blockquote.type3.magenta {
+    border-color: #cb506d;
+}
+
+blockquote.type2.magenta cite::before {
+    background-color: #cb506d;
+}
+
+/* Orange */
+
+blockquote.type1.orange q,
+blockquote.type3.orange {
+    border-color: #ff9800;
+}
+
+blockquote.type2.orange cite::before {
+    background-color: #ff9800;
+}
+
+/* Pink */
+
+blockquote.type1.pink q,
+blockquote.type3.pink {
+    border-color: #fd6ca3;
+}
+
+blockquote.type2.pink cite::before {
+    background-color: #fd6ca3;
+}
+
+/* Purple */
+
+blockquote.type1.purple q,
+blockquote.type3.purple {
+    border-color: #9c27b0;
+}
+
+blockquote.type2.purple cite::before {
+    background-color: #9c27b0;
+}
+
+/* Red */
+
+blockquote.type1.red q,
+blockquote.type3.red {
+    border-color: #da0000;
+}
+
+blockquote.type2.red cite::before {
+    background-color: #da0000;
+}
+
+/* SkyBlue */
+
+blockquote.type1.skyblue q,
+blockquote.type3.skyblue {
+    border-color: #0eb2e7;
+}
+
+blockquote.type2.skyblue cite::before {
+    background-color: #0eb2e7;
+}
+
+/* Teal */
+
+blockquote.type1.teal q,
+blockquote.type3.teal {
+    border-color: #009688;
+}
+
+blockquote.type2.teal cite::before {
+    background-color: #009688;
+}
+
+/* Turquoise */
+
+blockquote.type1.turquoise q,
+blockquote.type3.turquoise {
+    border-color: #32ccbd;
+}
+
+blockquote.type2.turquoise cite::before {
+    background-color: #32ccbd;
+}
+
+/* Wisteria */
+
+blockquote.type1.wisteria q,
+blockquote.type3.wisteria {
+    border-color: #9b59b6;
+}
+
+blockquote.type2.wisteria cite::before {
+    background-color: #9b59b6;
+}
+
+/* Yellow */
+
+blockquote.type1.yellow q,
+blockquote.type3.yellow {
+    border-color: #ffe401;
+}
+
+blockquote.type2.yellow cite::before {
+    background-color: #ffe401;
+}
+
+/*--------------------------------------------------------------
+	2.0 - Default Colors
+	--------------------------------------------------------------*/
+
+blockquote.type1 q {
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+/*--------------------------------------------------------------
+	3.0 - Responsive
+	--------------------------------------------------------------*/
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+    blockquote.type2 {
+        width: 100%;
+    }
+    blockquote.type2 q {
+        margin-right: 30px;
+    }
+}
+
+/*Spalab*/
+
+blockquote.type1 {
+    border-left: 3px solid;
+    background: #f5f5f5;
+    display: block;
+    padding: 20px;
+    margin: 0px;
+    position: relative;
+    clear: left;
+    margin-bottom: 15px;
+}
+
+blockquote.type1 :before {
+    content: "";
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #ffffff;
+    left: -3px;
+    width: 0;
+    height: 0;
+    margin: auto;
+    top: 0px;
+    bottom: 0;
+    position: absolute;
+}
+
+blockquote.type1 q {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    color: #808080;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+blockquote {
+    border-left: 3px solid;
+    background: #f5f5f5;
+    display: block;
+    padding: 20px;
+    margin: 0px;
+    position: relative;
+    clear: left;
+}
+
+blockquote q {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    /* color:#808080; */
+}
+
+blockquote cite {
+    font-size: 12px;
+    margin: 10px 0px 0px;
+    display: block;
+    color: #2d2d29;
+}
+
+blockquote.type2:before {
+    content: "";
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #ffffff;
+    left: -3px;
+    width: 0;
+    height: 0;
+    margin: auto;
+    top: 0px;
+    bottom: 0;
+    position: absolute;
+}
+
+blockquote p {
+    margin-bottom: 10px;
+}
+
+blockquote p:only-child {
+    margin-bottom: 0px;
+}
+
+blockquote.alignleft {
+    margin-right: 20px;
+    text-align: left;
+    width: 30%;
+    float: left;
+}
+
+blockquote.alignright {
+    margin-left: 20px;
+    text-align: left;
+    width: 30%;
+    float: right;
+}
+
+blockquote.aligncenter {
+    text-align: center;
+}
+
+.wp-block-pullquote blockquote:before {
+    display: none;
+}
+
+.wp-block-pullquote blockquote cite {
+    text-align: inherit;
+}
+
+/*----*****---- << Blockquote >> ----*****----*/
+
+blockquote.type2 {
+    border-top: 3px solid;
+    border-left: 0px;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+blockquote.type2:before {
+    top: 0px;
+    bottom: inherit;
+    left: 0px;
+    right: 0px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid;
+}
+
+blockquote.type3 {
+    border: none;
+    background: none;
+    text-align: center;
+    padding: 0px;
+}
+
+blockquote.type3 q {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 32px;
+    color: #c9c9c9;
+}
+
+blockquote.type3:before {
+    background: none;
+    border: none;
+}
+
+blockquote.type3 cite {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: right;
+}
+
+/*----*****---- << Pullquotes >> ----*****----*/
+
+.dt-sc-pullquote1,
+.dt-sc-pullquote2,
+.dt-sc-pullquote3,
+.dt-sc-pullquote4,
+.dt-sc-pullquote5,
+.dt-sc-pullquote6 {
+    margin-bottom: 10px !important;
+    display: inline-block;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 30px;
+}
+
+.dt-sc-pullquote1 {
+    border-left: 3px solid #d9d9d9;
+    background: #f5f5f5;
+    letter-spacing: 0;
+    line-height: 25px;
+    padding: 15px;
+}
+
+.dt-sc-pullquote2 {
+    background: #f5f5f5;
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px #d0d0d0;
+    padding: 19px;
+}
+
+.dt-sc-pullquote3 {
+    background: #f5f5f5;
+    border-bottom: 2px dotted #d9d9d9;
+    border-top: 2px dotted #d9d9d9;
+    padding: 19px;
+}
+
+.dt-sc-pullquote4 {
+    border-bottom: 4px double #d9d9d9;
+    border-top: 4px double #d9d9d9;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.dt-sc-pullquote5 {
+    border-left: 3px solid;
+    letter-spacing: 0;
+    line-height: 25px;
+    padding: 5px 5px 5px 15px;
+}
+
+.dt-sc-pullquote6 {
+    background: #f5f5f5;
+    border-top: 3px solid;
+    letter-spacing: 0;
+    line-height: 25px;
+    padding: 15px;
+}
+
+.quotes:before {
+    content: open-quote;
+    display: inline;
+    font-size: 150%;
+    font-weight: bold;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.quotes:after {
+    content: close-quote;
+    display: inline;
+    font-size: 150%;
+    font-weight: bold;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.dt-sc-pullquote1.aligncenter,
+.dt-sc-pullquote2.aligncenter,
+.dt-sc-pullquote3.aligncenter,
+.dt-sc-pullquote4.aligncenter,
+.dt-sc-pullquote5.aligncenter,
+.dt-sc-pullquote6.aligncenter {
+    display: block;
+    float: none;
+    text-align: center;
+    width: auto;
+}
+
+.dt-sc-pullquote1.alignleft,
+.dt-sc-pullquote1.aligncenter {
+    margin-left: 2px;
+}
+
+.dt-sc-pullquote1.alignright,
+.dt-sc-pullquote1.aligncenter {
+    margin-right: 2px;
+}
